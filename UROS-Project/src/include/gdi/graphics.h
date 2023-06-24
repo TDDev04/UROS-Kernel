@@ -63,38 +63,6 @@ void DrawString(const char *string, int x, int y, int color)
 	}
 }
 
-void IntToString(int number, OUT char* str) 
-{
-	uint32_t writtenOneDigit = FALSE;
-	int writeIdx = 0;
-	if (number == 0) {
-		// Special case for when the number is 0
-		str[0] = '0';
-		str[1] = 0;
-		return;
-	}
-	if (number < 0) {
-		str[writeIdx++] = '-';
-		number *= -1;
-	}
-	for (int div = 1000000000; div > 0; div /= 10) {
-		int digit = number/div;
-		if (digit != 0 || writtenOneDigit) {
-			writtenOneDigit = TRUE;
-			str[writeIdx++] = digit + 48; // convert number digit to string digit
-			number -= digit * div;
-		}
-	}
-	str[writeIdx] = 0;
-}
-
-void DrawInt(int num, int x, int y, int color) {
-	char chars[12];
-	IntToString(num, chars);
-	DrawString(chars, x, y, color);
-}
-
-
 void CreateWindow(int x, int y, int w, int h, const char *Title)
 {
     // create the main window
@@ -136,5 +104,5 @@ void Exception_Handle()
             SetPixel(i, (HEIGHT - 18) + j, 0xFFFFFF);
         }
     }
-    DrawString("cock", 1, (HEIGHT - 16), RGB(255, 0, 0));
+    DrawString("oofiz", 1, (HEIGHT - 16), RGB(255, 0, 0));
 }
