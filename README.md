@@ -3,6 +3,17 @@ The Operating System that I am developing.
 
 This code is not organised yet. It needs a lot of changes, and not rely especially on headers.
 
-So, the drill: To execute this, you might just use the Makefile run argument.
-If for some reason doesn't work, proceed to run the following command
+Compiling the project:
+For now, you do need to compile this with linux, any distro will work, in my case, i use WSL.
+If you find a way to do this in Windows, feel free to open an issue.
+In any case, you need the following tools if you don't have them.
+
+**Run these if you don't have any toolset to compile the project**
+`sudo apt install gcc xorriso build-essential git`
+`sudo apt install nasm`
+
+Im not sure tho if any other cross-compiler would work, try luck modifying the Makefile.
+
+If you have all the osdev tools installed, you dont have. To execute this, run `make run`.
+If for some reason doesn't work, proceed to run the following command.
 `qemu-system-i386.exe -accel whpx -d int -no-shutdown -no-reboot UROS-Image.bin`
