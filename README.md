@@ -1,7 +1,8 @@
 # UROS-Kernel
 The Operating System that I am developing.
 
-This code is not organised yet. It needs a lot of changes, and not rely especially on headers.
+~~This code is not organised yet. It needs a lot of changes, and not rely especially on headers.~~
+Now the code is organised "properly", refer to updates.txt for more updates this time.
 
 Compiling the project:
 For now, you do need to compile this with linux, any distro will work, in my case, i use WSL.
