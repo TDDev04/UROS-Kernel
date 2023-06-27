@@ -1,4 +1,5 @@
-#include "../include/io/typedefs.h"
+#pragma once
+#include "../io/typedefs.h"
 
 typedef struct
 {
