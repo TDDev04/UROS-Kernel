@@ -1,1 +1,3 @@
 27/06/2023: Fixed the entire project, now it doesn't rely anymore on header files.
+Now for now this cannot be compiled because im still working on the IDT, so, in order
+to make it work you must remove `idt.h`, `idt.c` and the `init.asm`.
