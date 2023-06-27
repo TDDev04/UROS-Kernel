@@ -10,10 +10,6 @@ void kmain()
 	DrawString("\nExecuted /kernel.sys", 0, 0, 0x00FF00);
 	DrawString("\n\nFirst clock init:", 0, 0, 0xFFA500);
     Exception_Handle();
-    int x = 0;
-    while (1)
-    {
-        x++;
-        CreateWindow(100 + sin(x/10) * 10, 80, 500, 300, "Window Test");
-    }
+    CreateWindow(100, 80, 500, 300, "Window Test");
+    halt();
 }

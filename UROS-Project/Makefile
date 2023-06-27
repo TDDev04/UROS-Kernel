@@ -18,6 +18,7 @@ all: $(KERNEL)
 
 $(KERNEL): $(OBJ)
 	$(LD) -T ./bootloader/linker.ld -o src/$(KERNEL) $(OBJ)
+
 	$(AS) -fbin bootloader/settings.asm -o obj/settings.bin
 	$(AS) -fbin bootloader/bootloader.asm -o image/UROS-IMAGE.bin
 
