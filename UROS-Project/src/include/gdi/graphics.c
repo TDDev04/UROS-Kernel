@@ -136,5 +136,5 @@ void Exception_Handle()
             SetPixel(i, (HEIGHT - 18) + j, 0xFFFFFF);
         }
     }
-    DrawString("cock", 1, (HEIGHT - 16), RGB(255, 0, 0));
+    DrawString("Exception", 1, (HEIGHT - 16), RGB(255, 0, 0)); // oh gosh...
 }
